@@ -1,9 +1,10 @@
 import React from 'react'
 import logo from "../assets/rentplace.png";
 import { BiWorld} from 'react-icons/bi';
-import { FiMenu, FiSearch } from 'react-icons/fi';
+import { FiSearch } from 'react-icons/fi';
 import { AiOutlineUser} from 'react-icons/ai';
-// import { FiSearch} from 'react-icons/ai';
+import { BsFillHouseAddFill } from 'react-icons/bs';
+
 
 
 const Navbar = () => {
@@ -29,12 +30,16 @@ const Navbar = () => {
         </div>
         </div>
         {/* Right */}
-        <div className="flex items-center pr-3">
-          <p>Rent House</p>
-          <BiWorld />
-          <div className="flex items-center">
-          <FiMenu />
-          <AiOutlineUser />
+        <div className="flex items-center pr-3 font-semibold ">
+          <p className="text-[17 px] flex">Rent </p>
+          <BsFillHouseAddFill />
+          <BiWorld className="mx-4" />
+          <div className="flex items-center border px-3 py-2 
+          rounded-full gap-3 bg-[#89CFF0] text-white font-bold
+          shadow-lg shadow-gray-300 hover:bg-[#4682B4]
+          duration-100 ease-out">
+          <p>Sign in</p>
+          <AiOutlineUser className="text-[22px]" />
           </div>
         </div>
     </div>
